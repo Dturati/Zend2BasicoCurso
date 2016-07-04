@@ -1,0 +1,11 @@
+<?php foreach($this->categorias as $dados): ?>
+    <?php echo $dados->getId()."<br>"; ?>
+    <?php echo $dados->getNome()."<br>"; ?>
+    <?php foreach($dados    ->getLivros() as $livro): ?>
+        <?php echo $livro->getNome()."<br>"; ?>
+    <?php endforeach; ?>
+<?php endforeach; ?>
+
+
+
+
